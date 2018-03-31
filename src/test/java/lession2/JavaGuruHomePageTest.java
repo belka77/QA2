@@ -27,3 +27,5 @@ public class JavaGuruHomePageTest {
         Assert.assertEquals("Title is wrong!", "Ushakov privet!", articleTitle.getText());
     }
 }
+
+
