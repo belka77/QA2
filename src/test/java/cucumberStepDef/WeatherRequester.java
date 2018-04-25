@@ -1,4 +1,4 @@
-package CucumberStepDef;
+package cucumberStepDef;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Response;

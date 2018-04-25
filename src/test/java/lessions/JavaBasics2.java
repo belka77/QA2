@@ -1,4 +1,4 @@
-package lession4;
+package lessions;
 
 import model.Article;
 import org.junit.Test;

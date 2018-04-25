@@ -1,10 +1,12 @@
-package lession2;
+packageage package lession2;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
 import pages.*;
+import pages.Mobile.MobileHomePage;
+import pages.Web.HomePage;
 
 
 import java.util.List;
@@ -18,14 +20,13 @@ public class DelfiTest {
     private static final String MAIN_PAGE_WEB_URL = "http://www.delfi.lv/";
     private static final String MAIN_PAGE_MOBILE_URL = "http://m.delfi.lv/";
 
-
     private static final Logger LOGGER = LogManager.getLogger(DelfiTest.class);
 
 
     @Test
     public void delfiTest() {
 
-        baseFunc.goToUrl(MAIN_PAGE_WEB_URL);
+
         LOGGER.info("We are starting!");
 
         HomePage homePage = new HomePage(baseFunc);

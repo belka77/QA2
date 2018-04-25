@@ -1,9 +1,8 @@
-package lession2;
+package lessions;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.google.common.annotations.VisibleForTesting;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
