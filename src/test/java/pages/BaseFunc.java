@@ -22,8 +22,37 @@ public class BaseFunc {
         driver.get(url);
     }
 
+    public void ClosePage() {
+        this.driver.close();
+    }
+
     public List<WebElement> getElements(By locator) {
         return driver.findElements(locator);
+
+        public List<WebElement> getArticles (By locator){
+            return driver.findElements(locator);
+        }
+        public WebElement getArticles (By locator)
+        return driver.findElement(locator);
+
+    }
+    public WebElement getArticle(By locator){
+        return driver.findElement(locator);
+    }
+
+    public int getCommentsCount(By locator){
+        List<WebElement> list = this.getElements(locator);
+        if (list.isEmpty())
+        {
+            return 0;
+        }
+        else {
+            String count = list.get(0).getText();
+            count  = count.replace("(","");
+            count  = count.replace(")", "");
+            return Integer.valueOf(count);
+
+        }
     }
 }
 
